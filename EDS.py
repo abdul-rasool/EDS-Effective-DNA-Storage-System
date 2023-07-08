@@ -488,9 +488,7 @@ def decimal2OtherSystem(decimal_number: int, other_system:int, precision:int = N
     return num_list
 
 def getHomoLen(seq: str) -> int:
-    '''
-    Wei Qiang
-    '''
+   
     seq_new = seq + "$"
     pos1 = 0
     pos2 = 1
