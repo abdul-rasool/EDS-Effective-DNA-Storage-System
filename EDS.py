@@ -72,7 +72,7 @@ E_set = {'AA':{'0': 'TC', '1': 'TG', '00': 'CA', '01': 'CT', '10': 'GA', '11': '
              'CC':{'0': 'AC', '1': 'AG', '00': 'TC', '01': 'TG', '10': 'GA', '11': 'GT'},
              'GG':{'0': 'AC', '1': 'AG', '00': 'TC', '01': 'TG', '10': 'CA', '11': 'CT'}}
 
-# new Quaternary-like code
+# new Quaternary code
 def n_Q_like(input_str, B_set):
     dna_str = ""
     rule = 'ATCG'
@@ -325,7 +325,7 @@ def write_dna_file(path, dna_sequences):
 def read_dna_file(path):
     dna_sequences = []
     with open(path, "r") as file:
-        # 逐行读取
+       #Read line by line
         lines = file.readlines()
         for  index, line in enumerate(lines):
             dna_sequences.append(list(line.replace("\n", "")))
@@ -466,11 +466,7 @@ def redundancy(data,sequence_len):
     return with_redundancy
 
 def decimal2OtherSystem(decimal_number: int, other_system:int, precision:int = None) -> list:
-    '''
-    Wei Qiang
-    list中，每一个元素为一位，例十六进制中，"10"="A"
-    precision: 转换的位数，也就是序列长度，如果有指定，则在前面补0
-    '''
+   
 
     remainder_list = []
     while True:
@@ -483,7 +479,7 @@ def decimal2OtherSystem(decimal_number: int, other_system:int, precision:int = N
 
 
     num_list = remainder_list[::-1]
-    # 指定precision
+  #Specify precision
     if precision != None:
         if precision < len(num_list):
             raise ValueError("The precision is smaller than the length of number. Please check the [precision] value!")
@@ -492,9 +488,7 @@ def decimal2OtherSystem(decimal_number: int, other_system:int, precision:int = N
     return num_list
 
 def getHomoLen(seq: str) -> int:
-    '''
-    Wei Qiang
-    '''
+   
     seq_new = seq + "$"
     pos1 = 0
     pos2 = 1
@@ -508,9 +502,7 @@ def getHomoLen(seq: str) -> int:
     return max_len
 
 def getPrimerList(save_path, primer_len:int=20, primer_num:int = 100, homo:int = 3, gc=0.5):
-    '''
-    Wei Qiang
-    '''
+    
     mapping_rule = {"0":"A", "1":"C", "2":"G", "3":"T"}
 
     primer_set = set()
@@ -543,9 +535,7 @@ def getPrimerList(save_path, primer_len:int=20, primer_num:int = 100, homo:int =
     return list(primer_set)
 
 def runBlast(ref_path, primer_path):
-    '''
-    Wei Qiang
-    '''
+   
     result_path = os.path.dirname(ref_path) + os.sep + "result.blast"
     shell = "makeblastdb -dbtype nucl -in {}\n".format(ref_path)
     shell += "blastn -query {} -db {} -out {} -outfmt 6\n".format(primer_path, ref_path, result_path)
@@ -555,9 +545,7 @@ def runBlast(ref_path, primer_path):
     return result_path
 
 def filterPrimer(blast_path, primer_list):
-    '''
-    Wei Qiang
-    '''
+   
 
     homology_index = []
     with open(blast_path) as f:
@@ -585,7 +573,7 @@ def addPrimer(primer_f, primer_r, sequences):
     add_primer_r = "".join([compement_dic[i] for i in primer_r][::-1])
     with_primer_seq_list = ["{}{}{}".format(primer_f, i, add_primer_r) for i in sequences]
     return with_primer_seq_list
-
+#for image encode
 def main_for_img():
     img_dir = './image/'
     result_dir = './imageResults/'
@@ -619,7 +607,7 @@ def main_for_img():
 
     save_path = "{}/result.dna".format(result_dir)
     write_dna_file(save_path, final_sequence_list)
-
+# for non-image encode
 def main_for_pdf():
     pdf_dir = 'MRI_report_2.pdf'
     result_dir = './reportResults/'
@@ -641,7 +629,7 @@ def main_for_pdf():
     write_dna_file(primer_save_path, with_primer_seq_list)
 
 if __name__ == '__main__':
-    main_for_img()
+    main_for_img() 
     # main_for_pdf()
 
 
