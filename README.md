@@ -29,7 +29,9 @@ Step-by-step installation is as follows:
 ## Experimental steps 
 
 Update the existing system according to requirements or run.
+
 The EDS.py code, as provided, performs image file transcoding by dividing it into 16 equal segments. Nevertheless, users have the flexibility to adapt the code for different file types, as EDS accommodates various formats. Upon execution, the user gains access to the following information: 
+
    - Original binary segment 
    - Max GC 
    - Min GC 
@@ -39,7 +41,9 @@ The EDS.py code, as provided, performs image file transcoding by dividing it int
    - Average length 
    - Total sequences
    - Density 
-   - Time 
+   - Time
+
+
 Moreover, the output DNA sequences in .fa and .blast formats are accessible in the "imageResults" directory (for image files) and the "reportResults" directory (for non-image files). These DNA sequences serve as essential components for the subsequent DNA synthesis and decoding procedures.
 
 
