@@ -14,7 +14,9 @@ Step-by-step installation is as follows:
 ## Tools and environment 
 
 > Install Python IDE, PyCharm from here https://www.jetbrains.com/pycharm/download/?section=windows,
+
 > Install Python following packages
+
 - Codecs
 - Math
 - Struct
