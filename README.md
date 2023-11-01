@@ -1,6 +1,6 @@
 # EDS
 
-EDS: An Effective DNA File Storage System to Practically Archive and Retrieve Medical Data
+EDS: An Effective DNA-Based File Storage System for Practical Archiving and Retrieval of Medical MRI Data
 
 ## What is EDS?
 
