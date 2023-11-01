@@ -30,6 +30,8 @@ Step-by-step installation is as follows:
 
 Update the existing system according to requirements or run.
 
+Readers can easily follow the steps outlined in our video demonstration available in the files above.
+
 ### ENCODING 
 1.	Open EDS.py
 2.	The default settings are for encoding the image files (16 chunks of MRI). Users can change the input file path and output results path at img_dir = './image/' and result_dir = './imageResults/', respectively. 
