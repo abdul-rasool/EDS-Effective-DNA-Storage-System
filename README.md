@@ -30,7 +30,7 @@ Step-by-step installation is as follows:
 
 Update the existing system according to requirements or run.
 
-Readers can easily follow the steps outlined in our video demonstration available in the files above.
+> Readers can easily follow the steps outlined in our video demonstration available in the files above.
 
 ### ENCODING 
 1.	Open EDS.py
