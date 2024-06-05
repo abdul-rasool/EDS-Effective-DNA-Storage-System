@@ -1,6 +1,6 @@
-# EDS
+# EDS: Effective DNA Storage System 
 
-EDS: An Effective DNA-Based File Storage System for Practical Archiving and Retrieval of Medical MRI Data
+An Effective DNA-Based File Storage System for Practical Archiving and Retrieval of Medical MRI Data
 
 ## What is EDS?
 
@@ -77,4 +77,8 @@ http://www.gnu.org/licenses/
 
 # Citation
 
-A related paper is submitted to the SCI journal. 
+A related paper (https://onlinelibrary.wiley.com/doi/10.1002/smtd.202301585) is published in Small Method journal (12.4 impact factor). 
+
+Cite: 
+
+A. Rasool, J. Hong, Z. Hong, Y. Li, C. Zou, H. Chen, Q. Qu, Y. Wang, Q. Jiang, X. Huang, J. Dai, An Effective DNA-Based File Storage System for Practical Archiving and Retrieval of Medical MRI Data. Small Methods 2024, 2301585. https://doi.org/10.1002/smtd.202301585
